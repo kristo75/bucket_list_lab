@@ -1,12 +1,13 @@
-const main = function()  {
+const countries = require('./dataModels/countries.js')
+const url = "http://restcountries.eu/rest/v2/all"
 
-  const requester = require('./helpers/requester.js')
-  const urlCountries = "http://restcountries.eu/rest/v2/all"
-  requester.get(urlCountries, callback1)
+const main = function()  {
+  countries.get(url, callback);
 }
 
-const callback1 = function(result) {
-  console.log(result);
+const callback = function(result) {
+  countries.setUpCountries(result);
+  console.log(countries.all);
 }
 
 
