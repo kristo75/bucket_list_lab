@@ -1,0 +1,31 @@
+{
+  "name": "bucket_list_lab",
+  "version": "1.0.0",
+  "description": "Notes:",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha ./src/specs",
+    "start": "nodemon server.js",
+    "webpack": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristo75/bucket_list_lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristo75/bucket_list_lab/issues"
+  },
+  "homepage": "https://github.com/kristo75/bucket_list_lab#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongodb": "^3.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.1",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.9"
+  }
+}
