@@ -19,7 +19,9 @@ Countries.prototype.get = function(url, callback) {
 }
 
 Countries.prototype.setUpCountries = function(countriesArray){
-  this.all = countriesArray;
+  countriesArray.forEach(country => {
+    this.all.push(country.name)
+  })
 }
 
 module.exports = new Countries();
